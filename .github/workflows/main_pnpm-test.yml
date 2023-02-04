@@ -65,8 +65,11 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
+      - name: install rush
+        run: pnpm add -g @microsoft/rush
+
       - name: rush build
-        run: cd src/explore-education-statistics && pnpx rush build
+        run: cd src/explore-education-statistics-frontend && rush build
 
       - name: pnpm deploy frontend
         run: pnpm --filter=explore-education-statistics-frontend deploy --prod public-frontend
