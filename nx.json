@@ -7,5 +7,16 @@
       }
     }
   },
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "cli": {
+    "defaultCollection": "@nrwl/node"
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  }
 }
