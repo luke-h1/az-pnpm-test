@@ -1,0 +1,206 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <UserSecretsId>aspnet-GovUk.Education.ExploreEducationStatistics.Admin-27177B65-FE3A-416B-97FE-420DF4EFF8BF</UserSecretsId>
+    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Migrations\ContentMigrations\*.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Migrations\UsersAndRolesMigrations\*.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Migrations\ContentMigrations\Html\Pupil_Absence_Statistics\*.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Migrations\ContentMigrations\Html\Pupil_Exclusion_Statistics\*.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Migrations\ContentMigrations\Html\Secondary_And_Primary_School_Applications_And_Offers\*.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspectInjector" Version="2.7.3" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2" PrivateAssets="all" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="GovukNotify" Version="6.0.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="JsonKnownTypes" Version="0.4.1" />
+    <PackageReference Include="JWT" Version="7.3.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.18.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.WebApiCompatShim" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Azure.SignalR" Version="1.15.2" />
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.2.3" />
+    <PackageReference Include="Microsoft.Azure.Storage.Queue" Version="11.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="6.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+    <PackageReference Include="NWebsec.AspNetCore.Middleware" Version="2.0.0" />
+    <PackageReference Include="System.Linq.Async" Version="5.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="Thinktecture.EntityFrameworkCore.SqlServer" Version="4.1.0" />
+    <PackageReference Include="Cronos" Version="0.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\site.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\LICENSE" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\bold-a2452cb66f-v1.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\bold-f38c792ac2-v1.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\bold-fb2676462a-v1.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\bold-tabular-357fdfbcc3-v1.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\bold-tabular-784c21afb8-v1.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\bold-tabular-b89238d840-v1.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\light-2c037cf7e1-v1.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\light-458f8ea81c-v1.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\light-f38ad40456-v1.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\light-tabular-498ea8ffe2-v1.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\light-tabular-62cc6f0a28-v1.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\fonts\light-tabular-851b10ccdd-v1.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\favicon.ico" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-apple-touch-icon-152x152.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-apple-touch-icon-167x167.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-apple-touch-icon-180x180.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-apple-touch-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-crest-2x.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-crest.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-logotype-crown.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-mask-icon.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\govuk-opengraph-image.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\icon-arrow-left.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\icon-important.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\icon-pointer-2x.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\images\icon-pointer.png" />
+    <_ContentIncludedByDefault Remove="Views\FileUpload\Upload.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\File\List.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Notifications\NotificationsSent.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Notifications\NotifySubscribers.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publications\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publications\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publications\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publications\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publications\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publishing\PublishReleaseData.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Publishing\ReleaseDataPublished.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Releases\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Releases\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Releases\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Releases\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Releases\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_CookieConsentPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_LoginPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Themes\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Themes\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Themes\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Themes\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Themes\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Topics\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Topics\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Topics\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Topics\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Topics\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Topics\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Topics\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Topics\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Topics\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Topics\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Themes\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Themes\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Themes\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Themes\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Themes\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Releases\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Releases\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Releases\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Releases\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Publishing\PublishReleaseData.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Publishing\ReleaseDataPublished.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Publications\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Publications\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Publications\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Publications\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Notifications\NotificationsSent.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Notifications\NotifySubscribers.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Tools\Views\Home\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GovUk.Education.ExploreEducationStatistics.Content.Model\GovUk.Education.ExploreEducationStatistics.Content.Model.csproj" />
+    <ProjectReference Include="..\GovUk.Education.ExploreEducationStatistics.Content.Services\GovUk.Education.ExploreEducationStatistics.Content.Services.csproj" />
+    <ProjectReference Include="..\GovUk.Education.ExploreEducationStatistics.Data.Processor.Model\GovUk.Education.ExploreEducationStatistics.Data.Processor.Model.csproj" />
+    <ProjectReference Include="..\GovUk.Education.ExploreEducationStatistics.Data.Services\GovUk.Education.ExploreEducationStatistics.Data.Services.csproj" />
+    <ProjectReference Include="..\GovUk.Education.ExploreEducationStatistics.Publisher.Model\GovUk.Education.ExploreEducationStatistics.Publisher.Model.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NoWarn>NU1605</NoWarn>
+  </PropertyGroup>
+</Project>

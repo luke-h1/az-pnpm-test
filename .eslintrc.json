@@ -1,0 +1,147 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react-hooks"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "./src"
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/typescript",
+    "prettier",
+    "prettier/prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_$" }
+    ],
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "class-methods-use-this": "off",
+    "import/extensions": "off",
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-unresolved": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-unescaped-entities": [
+      "error",
+      {
+        "forbid": [
+          {
+            "char": ">",
+            "alternatives": ["&gt;"]
+          },
+          {
+            "char": "}",
+            "alternatives": ["&#125;"]
+          }
+        ]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/jsx-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": ["error", {
+      "html": "enforce",
+      "custom": "ignore"
+    }],
+    "react/jsx-wrap-multilines": ["error", { "prop": "ignore" }],
+    "react/require-default-props": "off",
+    "react/sort-comp": [
+      "error",
+      {
+        "order": [
+          "displayName",
+          "propTypes",
+          "contextTypes",
+          "childContextTypes",
+          "mixins",
+          "defaultProps",
+          "static-variables",
+          "static-methods",
+          "state",
+          "instance-variables",
+          "lifecycle",
+          "static-methods",
+          "getters",
+          "setters",
+          "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+          "instance-methods",
+          "everything-else",
+          "/^on.+$/",
+          "rendering"
+        ],
+        "groups": {
+          "lifecycle": [
+            "constructor",
+            "getDefaultProps",
+            "getInitialState",
+            "getChildContext",
+            "componentWillMount",
+            "componentDidMount",
+            "componentWillReceiveProps",
+            "shouldComponentUpdate",
+            "componentWillUpdate",
+            "componentDidUpdate",
+            "componentWillUnmount"
+          ],
+          "rendering": ["/^render.+$/", "render"]
+        }
+      }
+    ],
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": ["error", "static public field"],
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "htmlFor"
+      }
+    ],
+    "no-console": "warn",
+    "no-param-reassign": ["error", {
+      "props": true,
+      "ignorePropertyModificationsFor": ["draft", "acc"]
+    }],
+    "no-use-before-define": "off",
+    "no-useless-constructor": "off",
+    "spaced-comment": ["warn", "always", { "markers": ["/"] }]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "global-require": "off",
+        "import/no-dynamic-require": "off",
+        "no-console": "off"
+      }
+    }
+  ]
+}

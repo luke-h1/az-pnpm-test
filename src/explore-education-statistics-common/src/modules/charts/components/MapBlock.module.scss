@@ -1,0 +1,44 @@
+@import '~govuk-frontend/govuk/base';
+
+.map {
+  background-color: govuk-colour('light-grey');
+
+  path {
+    fill-opacity: 1;
+    stroke: #081b26;
+    stroke-width: 1px;
+  }
+
+  .uk {
+    fill: govuk-colour('dark-blue');
+    fill-opacity: 0.1;
+    stroke: #cfdce3;
+  }
+
+  .selected {
+    stroke-width: 3px;
+  }
+}
+
+.tooltip {
+  white-space: normal;
+  width: 100%;
+}
+
+.tooltipContent {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.legend {
+  align-items: center;
+  display: flex;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.legendIcon {
+  height: 20px;
+  margin-right: govuk-spacing(1);
+  width: 20px;
+}

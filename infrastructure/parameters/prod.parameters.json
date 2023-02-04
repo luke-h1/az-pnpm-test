@@ -1,0 +1,90 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "skuPublic": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuData": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuContent": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuAdmin": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuAdminSignalR": {
+      "value": "Standard_S1"
+    },
+    "skuImporter": {
+      "value": "P2V2 PremiumV2"
+    },
+    "skuNotifier": {
+      "value": "S1 Standard"
+    },
+    "skuPublisher": {
+      "value": "S1 Standard"
+    },
+    "publicAppBasicAuth": {
+      "value": "false"
+    },
+    "useSubnets": {
+      "value": true
+    },
+    "deploySubnets": {
+      "value": true
+    },
+    "autoscalePublicApplication": {
+      "value": true
+    },
+    "devopsSPN": {
+      "value": "702e692e-8bdf-4283-9799-9630cb781e33"
+    },
+    "domain": {
+      "value": "explore-education-statistics.service.gov.uk"
+    },
+    "contentApiUrl": {
+      "value": "content.explore-education-statistics.service.gov.uk"
+    },
+    "dataApiUrl": {
+      "value": "data.explore-education-statistics.service.gov.uk"
+    },
+    "publicAppGATrackingId": {
+      "value": "UA-139424173-5"
+    },
+    "storageAccountPrefix": {
+      "value": "sa"
+    },
+    "minCapacityStatisticsDb": {
+      "value": "4"
+    },
+    "maxCapacityStatisticsDb": {
+      "value": 10
+    },
+    "autoPauseDelayStatisticsDb": {
+      "value": -1
+    },
+    "minCapacityContentDb": {
+      "value": "2"
+    },
+    "maxCapacityContentDb": {
+      "value": 6
+    },
+    "autoPauseDelayContentDb": {
+      "value": -1
+    },
+    "enableAlerts": {
+      "value": true
+    },
+    "tableBuilderMaxTableCellsAllowed": {
+      "value": 1000000
+    },
+    "maxContentDbSizeBytes": {
+      "value": 2147483648
+    },
+    "maxStatsDbSizeBytes": {
+      "value": 1020054732800
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '~govuk-frontend/govuk/base';
+
+.group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: govuk-spacing(6);
+
+  > a,
+  > button {
+    margin-bottom: govuk-spacing(4);
+    margin-left: 0;
+  }
+
+  // stylelint-disable-next-line order/order
+  @include govuk-media-query($from: tablet) {
+    flex-direction: row;
+
+    > a,
+    > button {
+      margin-bottom: 0;
+      margin-left: govuk-spacing(2);
+    }
+  }
+
+  > :first-child {
+    margin-left: 0;
+  }
+}

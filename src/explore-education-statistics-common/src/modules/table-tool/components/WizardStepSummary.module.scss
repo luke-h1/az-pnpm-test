@@ -1,0 +1,36 @@
+@import '~govuk-frontend/govuk/base';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include govuk-media-query($from: tablet) {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.content {
+  flex-grow: 1;
+
+  @include govuk-media-query($from: tablet) {
+    display: flex;
+    max-width: 75%;
+
+    :global(.govuk-summary-list__key) {
+      width: 36%;
+    }
+  }
+}
+
+.goToContainer {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goToButton {
+  margin: govuk-spacing(2) 0;
+  text-align: right;
+}

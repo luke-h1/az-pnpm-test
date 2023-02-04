@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSelect renders correctly with required props 1`] = `
+<label class="govuk-label"
+       for="test-select"
+>
+  Test select
+</label>
+<select class="govuk-select"
+        id="test-select"
+        name="testSelect"
+>
+  <option value="option-1">
+    Option 1
+  </option>
+  <option value="option-2">
+    Option 2
+  </option>
+  <option value="option-3">
+    Option 3
+  </option>
+</select>
+`;
+
+exports[`FormSelect renders with error message 1`] = `
+<label class="govuk-label"
+       for="test-select"
+>
+  Test select
+</label>
+<span class="govuk-error-message"
+      id="test-select-error"
+>
+  <span class="govuk-visually-hidden">
+    Error:
+  </span>
+  Something went wrong
+</span>
+<select aria-describedby="test-select-error"
+        class="govuk-select govuk-select--error"
+        id="test-select"
+        name="testSelect"
+>
+  <option value="option-1">
+    Option 1
+  </option>
+  <option value="option-2">
+    Option 2
+  </option>
+  <option value="option-3">
+    Option 3
+  </option>
+</select>
+`;

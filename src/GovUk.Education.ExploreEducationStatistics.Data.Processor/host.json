@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "functionTimeout": "04:00:00",
+  "logging": {
+    "logLevel": {
+      "default": "Warning",
+      "Microsoft": "Warning",
+      "Function": "Information",
+      "GovUk.Education.ExploreEducationStatistics": "Information",
+      "Azure": "Error"
+    }
+  },
+  "extensions": {
+    "queues": {
+      "batchSize": 6,
+      "maxDequeueCount": 3
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '~govuk-frontend/govuk/base';
+
+.compact {
+  :global(.govuk-summary-list__key),
+  :global(.govuk-summary-list__value) {
+    padding-bottom: 0;
+    padding-top: govuk-spacing(1);
+  }
+}
+
+.smallKey {
+  :global(.govuk-summary-list__key) {
+    width: 15%;
+  }
+}

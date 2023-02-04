@@ -1,0 +1,76 @@
+## IDEs
+.idea
+.vs
+.vscode
+
+*.code-workspace
+*.iml
+*.ipr
+*.iws
+
+## Application
+bin
+obj
+/data/ees-mssql
+dfe-meta.db
+
+## CSharp
+
+*.sln.DotSettings.user
+
+## Javascript
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tsconfig.tsbuildinfo
+
+## Tests
+
+junit.xml
+src/explore-education-statistics-admin/*.xml 
+src/explore-education-statistics-common/*.xml
+src/explore-education-statistics-frontend/*.xml
+**/test-results/
+.pabotsuitenames
+/tests/robot-tests/backup-data
+/tests/robot-tests/webdriver
+/tests/robot-tests/.env.*
+/tests/robot-tests/UI-test-report.zip
+!/tests/robot-tests/.env.example
+/tests/robot-tests/IDENTITY_*
+/tests/robot-tests/.pabotsuitenames
+/tests/robot-tests/geckodriver.log
+/tests/robot-tests/debug.log
+**/*/chromedriver
+**/*/jwt
+**/coverage
+/useful-scripts/get_data_block_responses/*.csv
+/useful-scripts/get_data_block_responses/results*
+/tests/robot-tests/scripts/permalink_snapshots/invalid-permalinks.csv
+/tests/robot-tests/scripts/permalink_snapshots/prod-permalinks.csv
+/tests/robot-tests/scripts/permalink_snapshots/checked-permalinks.csv
+/tests/robot-tests/tests/visual_testing/visually_check_tables_and_charts.dev.robot
+/tests/robot-tests/tests/visual_testing/visually_check_tables_and_charts.dev.robot.csv
+
+## Data API Seed CSV data
+
+src/GovUk.Education.ExploreEducationStatistics.Data.Seed/Files/
+
+## Misc
+
+*.~lock*
+tags
+*.pyc
+*.tmp
+public-frontend
+lerna-debug.log
+
+admin-start.sh
+remote-profile
+
+.DS_Store
+
+## IdentityServer Developer Signing key
+**/*/tempkey.rsa

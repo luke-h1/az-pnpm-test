@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "skuPublic": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuData": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuContent": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuAdmin": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuAdminSignalR": {
+      "value": "Standard_S1"
+    },
+    "skuImporter": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuNotifier": {
+      "value": "S1 Standard"
+    },
+    "skuPublisher": {
+      "value": "S1 Standard"
+    },
+    "useSubnets": {
+      "value": true
+    },
+    "deploySubnets": {
+      "value": true
+    },
+    "autoscalePublicApplication": {
+      "value": false
+    },
+    "devopsSPN": {
+      "value": "702e692e-8bdf-4283-9799-9630cb781e33"
+    },
+    "domain": {
+      "value": "pre-production.explore-education-statistics.service.gov.uk"
+    },
+    "contentApiUrl": {
+      "value": "s101p02-as-ees-content.azurewebsites.net"
+    },
+    "dataApiUrl": {
+      "value": "data.pre-production.explore-education-statistics.service.gov.uk"
+    },
+    "publicAppGATrackingId": {
+      "value": "UA-139424173-4"
+    },
+    "enableThemeDeletion": {
+      "value": true
+    },
+    "tableBuilderMaxTableCellsAllowed": {
+      "value": 1000000
+    },
+    "maxContentDbSizeBytes": {
+      "value": 1073741824
+    },
+    "maxStatsDbSizeBytes": {
+      "value": 268435456000
+    },
+    "immediatePublicationOfScheduledReleasesEnabled": {
+      "value": true
+    }
+  }
+}

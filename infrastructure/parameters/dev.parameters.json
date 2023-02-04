@@ -1,0 +1,108 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "skuPublic": {
+      "value": "B1 Basic"
+    },
+    "skuData": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuContent": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuAdmin": {
+      "value": "P1V2 PremiumV2"
+    },
+    "skuImporter": {
+      "value": "P2V2 PremiumV2"
+    },
+    "skuNotifier": {
+      "value": "B1 Basic"
+    },
+    "skuPublisher": {
+      "value": "B1 Basic"
+    },
+    "publishReleasesCronSchedule": {
+      "value": "0 0 * * * *"
+    },
+    "publishReleaseContentCronSchedule": {
+      "value": "0 30 * * * *"
+    },
+    "preReleaseMinutesBeforeStart": {
+      "value": 1440
+    },
+    "preReleaseMinutesBeforeEnd": {
+      "value": 1
+    },
+    "useSubnets": {
+      "value": true
+    },
+    "deploySubnets": {
+      "value": true
+    },
+    "blobDeleteRetentionEnabled": {
+      "value": true
+    },
+    "blobDeleteRetentionDays": {
+      "value": 3
+    },
+    "devopsSPN": {
+      "value": "7c7b8f7c-e1aa-40ff-bc3a-5d4cfa98e49e"
+    },
+    "domain": {
+      "value": "dev.explore-education-statistics.service.gov.uk"
+    },
+    "contentApiUrl": {
+      "value": "content.dev.explore-education-statistics.service.gov.uk"
+    },
+    "dataApiUrl": {
+      "value": "data.dev.explore-education-statistics.service.gov.uk"
+    },
+    "detailedErrors": {
+      "value": true
+    },
+    "storageAccountPrefix": {
+      "value": "sa"
+    },
+    "publicAppGATrackingId": {
+      "value": "UA-139424173-2"
+    },
+    "enableSwagger": {
+       "value": true
+    },
+    "enableThemeDeletion": {
+      "value": true
+    },
+    "openIdConnectSpaClientAllowOfflineAccess": {
+      "value": true
+    },
+    "openIdConnectSpaClientRefreshTokenUsage": {
+      "value": "ReUse"
+    },
+    "openIdConnectSpaClientRefreshTokenExpiration": {
+      "value": "Sliding"
+    },
+    "memoryCacheOverridesDurationInSeconds": {
+      "value": 10
+    },
+    "branch": {
+       "value": "dev"
+    },
+    "maxContentDbSizeBytes": {
+      "value": 1073741824
+    },
+    "maxStatsDbSizeBytes": {
+      "value": 322122547200
+    },
+    "dataFactoryConcurrency": {
+      "value": 10
+    },
+    "releaseStatusPollTimeMillis": {
+      "value": 500
+    },
+    "immediatePublicationOfScheduledReleasesEnabled": {
+      "value": true
+    }
+  }
+}

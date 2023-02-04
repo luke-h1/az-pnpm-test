@@ -1,0 +1,34 @@
+@import '~govuk-frontend/govuk/base';
+
+.button {
+  @include govuk-link-common;
+  @include govuk-link-style-default;
+  @include govuk-link-print-friendly;
+
+  background: none;
+  border-width: 0;
+  color: govuk-colour('blue');
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+
+  &:focus {
+    @include govuk-focused-text;
+  }
+
+  &.disabled {
+    color: govuk-colour('light-blue');
+    cursor: not-allowed;
+    text-decoration: none;
+  }
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.warning {
+  color: govuk-colour('red');
+}

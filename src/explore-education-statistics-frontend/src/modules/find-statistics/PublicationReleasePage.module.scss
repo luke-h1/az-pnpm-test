@@ -1,0 +1,7 @@
+@import '~govuk-frontend/govuk/base';
+
+.releaseIntro {
+  :global(.govuk-details) {
+    margin-bottom: 0;
+  }
+}
