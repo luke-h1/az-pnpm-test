@@ -63,7 +63,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
       - name: Install dependencies
-        run: pnpm i --virtual-store-dir ./src/explore-education-statistics-frontend/node_modules/.pnpm
+        run: pnpm i
 
       # - name: pnpm i -F 
       #   run: pnpm i -F ./src/explore-education-statistics-frontend --virtual-store-dir ./src/explore-education-statistics-frontend/node_modules/.pnpm
