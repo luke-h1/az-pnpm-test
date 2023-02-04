@@ -69,7 +69,6 @@ jobs:
       - name: pnpm prune --prod
         run: pnpm prune --prod
 
-
       - name: build frontend
         run: pnpm --filter=explore-education-statistics-frontend build
 
