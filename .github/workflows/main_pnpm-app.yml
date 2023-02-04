@@ -65,8 +65,8 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      - name: Build frontend
-        run: pnpx nx build explore-education-statistics-frontend
+      - name: pnpm i -F 
+        run: pnpm i -F ./src/explore-education-statistics-frontend --virtual-store-dir ./src/explore-education-statistics-frontend/node_modules/.pnpm
 
       - name: pnpm deploy frontend
         run: pnpm --filter=explore-education-statistics-frontend deploy --prod public-frontend
