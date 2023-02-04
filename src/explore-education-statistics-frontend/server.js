@@ -1,5 +1,5 @@
-require('core-js/features/array/flat-map');
-require('core-js/features/array/flat');
+// require('core-js/features/array/flat-map');
+// require('core-js/features/array/flat');
 
 const appInsights = require('applicationinsights');
 
