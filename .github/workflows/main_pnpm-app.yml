@@ -72,13 +72,13 @@ jobs:
         run: pnpm --filter=explore-education-statistics-frontend deploy --prod public-frontend
 
       - name: zip frontend
-        run: zip -r -y public-frontend.zip public-frontend
+        run: cd public-frontend && zip -r -y public-frontend.zip *
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: public-frontend.zip
+          path: public-frontend/public-frontend.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -100,4 +100,4 @@ jobs:
           app-name: 'pnpm-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FC15AAD54B3D460DABD3D9C8136EE8BA }}
-          package: .
+          package: public-frontend.zip
