@@ -658,7 +658,6 @@ importers:
       cross-env: 7.0.3
       cross-fetch: 3.1.5
       date-fns: 2.29.3
-      explore-education-statistics-common: link:../explore-education-statistics-common
       express: 4.18.2
       express-basic-auth: 1.2.1
       formik: 2.2.9_react@17.0.2
@@ -714,6 +713,7 @@ importers:
       case-sensitive-paths-webpack-plugin: 2.4.0
       eslint: 7.32.0
       eslint-webpack-plugin: 3.2.0_u2ubl3shblmc7225ne6wflnyua
+      explore-education-statistics-common: link:../explore-education-statistics-common
       fork-ts-checker-webpack-plugin: 6.5.2_6l6xeafqmt6evxhe2eps6iva4m
       identity-obj-proxy: 3.0.0
       jest: 26.6.3

@@ -4,9 +4,8 @@ const withTranspileModules = require('next-transpile-modules');
 const path = require('path');
 
 const nextConfig = {
-  env: {
-    BUILD_NUMBER: process.env.BUILD_BUILDNUMBER,
-  },
+  output: 'standalone',
+  experimental: { outputFileTracingRoot: path.join(__dirname, '../') },
   publicRuntimeConfig: {
     APP_ENV: process.env.APP_ENV,
     CONTENT_API_BASE_URL: process.env.CONTENT_API_BASE_URL,
@@ -80,8 +79,6 @@ const nextConfig = {
       }
     }
 
-    config.resolve.symlinks = false;
-
     config.resolve.alias = {
       ...config.resolve.alias,
       './dist/cpexcel.js': false,
@@ -104,14 +101,11 @@ module.exports = flowRight(
     process.env.NEXT_CONFIG_MODE !== 'server'
       ? [
           'explore-education-statistics-common',
-          // // Need to add explicit dependencies as they may be un-transpiled
-          // // (ES6+) and cause IE11 to throw syntax errors.
-          // 'explore-education-statistics-common/node_modules/sanitize-html',
-          // 'explore-education-statistics-common/node_modules/nanoid',
+          // Need to add explicit dependencies as they may be un-transpiled
+          // (ES6+) and cause IE11 to throw syntax errors.
+          'explore-education-statistics-common/node_modules/sanitize-html',
+          'explore-education-statistics-common/node_modules/nanoid',
         ]
       : [],
-    {
-      resolveSymlinks: true,
-    },
   ),
 )(nextConfig);
