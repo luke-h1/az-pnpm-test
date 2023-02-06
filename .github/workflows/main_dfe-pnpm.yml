@@ -69,7 +69,7 @@ jobs:
         run: pnpm --filter=explore-education-statistics-frontend deploy --prod public-frontend
 
       - name: zip frontend
-        run: zip -r -y public-frontend.zip public-frontend
+        run: cd public-frontend && zip -r ../public-frontend.zip *
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
