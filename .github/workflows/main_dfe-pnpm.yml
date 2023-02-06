@@ -97,4 +97,4 @@ jobs:
           app-name: 'dfe-pnpm'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CD0EDD7F3C6A4ADD8253E508C6867295 }}
-          package: public-frontend.zip
+          package: .
