@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AngleSharp" Version="1.0.0-alpha-844" />
+        <PackageReference Include="AngleSharp" Version="1.0.4" />
         <PackageReference Include="AspectInjector" Version="2.7.3" PrivateAssets="all" />
         <PackageReference Include="AutoMapper" Version="9.0.0" />
         <PackageReference Include="Azure.Storage.Blobs" Version="12.10.0" />
